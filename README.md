@@ -37,7 +37,11 @@ cp config.template.py config.py
 vim config.py
 ```
 
+<<<<<<< HEAD
 **Run as 'service'**
+=======
+** Run as 'service'
+>>>>>>> 38bbc73b58e86659274d248063829326cee992ce
 
 ```sh
 crontab -e
