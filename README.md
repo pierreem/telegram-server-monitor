@@ -36,3 +36,13 @@ cp config.template.py config.py
 # Edit the config file with your favorite editor
 vim config.py
 ```
+
+**Run as 'service'
+
+```sh
+crontab -e
+
+#add this line
+@reboot /usr/bin/python3 /home/telegram/telegram-server-monitor/daemon.py
+
+```

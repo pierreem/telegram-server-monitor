@@ -24,8 +24,8 @@ while True:
             update_id = update["update_id"]
             if update_id > last_update_id:
                 last_update_id = update_id
-
-            methods.processMessage(update["message"])
+            if "message" in update:
+                methods.processMessage(update["message"])
     else:
         # TODO error handling
         print(result)
